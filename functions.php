@@ -50,9 +50,9 @@ add_action('enqueue_block_editor_assets', 'enqueue_bootstrap_assets');
 function university_features() {
   add_theme_support( 'align-wide' );
   add_theme_support( 'appearance-tools' );
-  add_theme_support( 'border' );
-  add_theme_support( 'custom-line-height' );
-  add_theme_support( 'custom-spacing' );
+  //add_theme_support( 'border' );
+  //add_theme_support( 'custom-line-height' );
+  //add_theme_support( 'custom-spacing' );
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
   add_image_size('banner-small', 480, 270, true);  // Tamanho P
