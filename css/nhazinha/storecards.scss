@@ -1,0 +1,69 @@
+.card-imagem{
+   height: 500px;
+   object-fit:center;
+  
+  
+    @include atMedium{
+      height: 450px;
+    }
+    @include atSmall{
+        height: 350px;
+      }
+
+}
+
+
+.text-grow {
+
+    transition: all .5s ease-in-out;
+ }
+ 
+ .text-grow:hover {
+    color: #8E1E36 !important;
+    transform: scale(1.1);
+ }
+ 
+ 
+ .zoom_mask {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    --bs-card-border-width: 0;
+    --bs-card-border-color: transparent;
+ }
+ 
+ .zoom_mask img {
+    width: 300%;
+    transition: 0.5s all ease-in-out;
+ }
+ 
+ .zoom_mask:hover img {
+    transform: scale(0.8);
+ }
+ 
+ 
+ .transform_hover_up>* {
+    transition: 0.5s all ease-in-out;
+ }
+ 
+ .zoom_mask:hover .transform_hover_up>* {
+    transform: translateY(-3.1rem);
+ }
+
+ 
+.zoom_mask:hover .saiba-mais-btn {
+    opacity: 1;
+    transform: translateY(-3.1rem);
+    /* Ajuste para mover o botão para a posição desejada */
+ }
+ 
+ .saiba-mais-btn {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    position: absolute;
+    /* Para esconder abaixo da máscara */
+    bottom: -50px;
+    /* Ajuste a posição conforme necessário */
+ }
+ 

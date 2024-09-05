@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "portfolios/nhazinhasotre",
+  "title": "Portfolios Cards Loja",
+  "supports": {
+    "align": [
+      "full"
+    ]
+  },
+  "attributes": {
+    "cards": {
+      "type": "array",
+      "default": [
+        {
+          "imgID": null,
+          "imgURL": "",
+          "imgTbnURL" : "",
+          "imgDescript": "Camisas"
+        },
+        {
+          "imgID": null,
+          "imgURL": "",
+          "imgTbnURL" : "",
+          "imgDescript": "Coletes"
+        },
+        {
+          "imgID": null,
+          "imgURL": "",
+          "imgTbnURL" : "",
+          "imgDescript": "Chapéus"
+        },
+        {
+          "imgID": null,
+          "imgURL": "",
+          "imgTbnURL" : "",
+          "imgDescript": "Bonés"
+        }
+      ]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

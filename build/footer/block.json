@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "portfolios/footer",
+  "title": "Portfolio Footer",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./style.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "shortcode": {
+      "type": "string",
+      "default": "[Paste de shortcode here]"
+    }
+  }
+}

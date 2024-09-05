@@ -1,0 +1,30 @@
+.button-nhazinha {
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.button-nhazinha::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: $vermelho;
+    left: -100%;
+    bottom: 50%;
+    transition: all 0.8s ease;
+}
+
+.button-nhazinha:hover::before {
+    left: 0;
+}

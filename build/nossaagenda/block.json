@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "portfolios/agenda",
+  "title": "Portfolio Agenda",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./style.css",
+  "render": "file:./render.php",
+  "attributes": {
+    "shortcode": {
+      "type": "string",
+      "default": "opa"
+    }
+  }
+}

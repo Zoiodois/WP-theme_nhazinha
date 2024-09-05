@@ -1,0 +1,61 @@
+.background-creme2 {
+    position: absolute;
+    margin: auto;
+    inset: 0px;
+    width: 600px;
+    height: 800px;
+    background: $creme-color;
+    z-index: -1;
+
+
+    @media (max-width: 600px) {
+      width: 80%;
+      height: 400px;
+   }
+
+  @media (max-width: 400px) {
+      width: 90%;
+      height: 300px;
+  }
+ }
+
+ .background-creme {
+
+   position: relative; /* Necessário para o pseudo-elemento */
+   padding: 20px;
+   margin: 10px;
+   border-radius: 8px;
+   overflow: hidden;
+}
+.background-creme::before {
+   content: "";
+   position: absolute;
+   top: 15%;
+   left: 6%;
+   right: 0;
+   bottom: 10%;
+   background-color: $creme-color; /* Cor de fundo personalizada */
+   z-index: -1; /* Coloca o fundo atrás do conteúdo */
+ }
+
+
+ .position-relative{
+   position: relative;
+ }
+ 
+ 
+ .no-outline {
+    --bs-card-border-width: 0 !important;
+    --bs-card-border-color: transparent !important;
+ }
+ 
+ 
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    /* Ajuste o tamanho conforme necessário */
+    margin: 0 10px;
+    /* Ajuste o espaçamento conforme necessário */
+ }
+ 

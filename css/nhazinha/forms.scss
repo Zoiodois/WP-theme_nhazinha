@@ -1,0 +1,63 @@
+
+
+//layout para o wpForms
+//****
+.wpforms-container .wpforms-field input[type="email"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 5px;
+    width: 100%;
+ }
+ 
+ .wpforms-field-email input[type="email"]::placeholder {
+    color: white;
+    opacity: 1; /* Garantindo que o placeholder fique visível */
+ }
+ 
+ .wpforms-field-label{
+    display: none;
+ }
+ .wpforms-submit {
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: left;
+    padding: 5px;
+ }
+ 
+ .wpforms-submit:hover {
+    color: #f0f0f0; /* Ajuste da cor ao passar o mouse, se desejar */
+ }
+
+ .shortcode-input {
+    outline: solid black 1px;
+    line-height: 1.1rem;
+    background-color: lightgray;
+    margin-left: 1%;
+    max-width: 70%;
+ }
+ 
+ //**end layout wpforms
+
+ 
+.email-input {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+    width: 100%;
+    padding: 5px 0;
+ }
+ 
+ .email-input::placeholder {
+    color: white;
+    opacity: 0.7;
+ }
+ 
+ .email-input:focus {
+    border-bottom: 1px solid white;
+    outline: none;
+ }

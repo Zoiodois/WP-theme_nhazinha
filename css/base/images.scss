@@ -1,0 +1,101 @@
+
+@media (max-width: 768px) {
+    .img-shrink {
+       height: 400px;
+    }
+ 
+    .img-shrink-max {
+       height: 300px;
+    }
+ 
+    .img-shrink-container {
+       display: flex;
+       justify-content: center;
+    }
+ }
+
+ 
+//New page banner
+//Esta crescendo mais que a tela
+.page-image {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    
+    box-sizing: border-box;
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+    &__bg-image{
+        
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        border-style: none;
+    }
+    
+}
+
+
+
+
+.page-banner-old {
+   background-color: #ffffff;
+   padding: 80px 0 40px 0;
+   position: relative;
+   @include atSmall {
+     padding: 130px 0 60px 0;
+     height: 300px;
+   }
+    
+   @include atMedium{
+    height: 400px;
+   }
+ 
+   &__content {
+     position: relative;
+     z-index: 2;
+   }
+ 
+ 
+   &__title {
+     font-family: "Roboto Condensed", sans-serif;
+     font-weight: 300;
+     font-size: 3.6rem;
+     margin: 0 0 1rem 0;
+     color: #fff;
+     @include atSmall {
+       font-size: 5rem;
+     }
+   }
+ 
+   &__bg-image {
+      background-size: contain; /* Faz com que a imagem ocupe todo o espaço disponível */
+      background-position: center; /* Centraliza a imagem */
+      background-repeat: no-repeat; /* Evita que a imagem se repita */
+     height: 500px;
+
+     @include atSmall{
+      height: 300px;
+     }
+     
+     @include atMedium{
+      height: 400px;
+     }
+
+   }
+ 
+   &__intro {
+     font-weight: 300;
+     font-size: 1.2rem;
+     line-height: 1.3;
+     color: #ededed;
+     @include atSmall {
+       font-size: 1.65rem;
+     }
+   }
+ 
+   &__intro p {
+     margin: 0;
+   }
+ }
+

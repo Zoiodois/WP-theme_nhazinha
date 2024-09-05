@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "portfolios/adjustableimages",
+  "title": "Portfolios Imagem Ajustavel",
+  "category": "media",
+  "supports": {
+    "align": [
+      "left",
+      "center",
+      "right",
+      "wide",
+      "full"
+    ],
+    "anchor": true,
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true,
+      "link": true
+    },
+    "html": false
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "full"
+    },
+    "altText": {
+      "type": "string",
+      "default": ""
+    },
+    "imgID": {
+      "type": "number"
+    },
+    "imgURLSWebp": {
+      "type": "string"
+    },
+    "imgURLMWebp": {
+      "type": "string"
+    },
+    "imgURLGWebp": {
+      "type": "string"
+    },
+    "className": {
+      "type": "string",
+      "default": ""
+    },
+    "linkObject": {
+      "type": "object",
+      "default": {
+        "url": ""
+      }
+    },
+    "duotone": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "variations": [
+    {
+      "name": "image-with-border",
+      "title": "__( 'Image with Border', 'mytheme' )",
+      "attributes": {
+        "className": "image-border"
+      },
+      "isActive": [
+        "className"
+      ]
+    },
+    {
+      "name": "circular-image",
+      "title": "__( 'Circular Image', 'mytheme' )",
+      "attributes": {
+        "className": "circular-image"
+      },
+      "isActive": [
+        "className"
+      ]
+    }
+  ]
+}

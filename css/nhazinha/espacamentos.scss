@@ -1,0 +1,220 @@
+//order the columns on smaller screen
+.custom-row_mark {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+
+    .custom-column_mark {
+        flex: 1;
+    }
+
+    .column_order-1 {
+
+        order: 1;
+    }
+
+    .column_order-2 {
+        order: 2;
+    }
+}
+
+//Sizing the border for paragraphs on smaller screen
+.paragraph_column {
+    @include atLarge {
+     
+        padding-right: 10% !important;
+        padding-left: 10% !important;
+    }
+
+    @include atMedium {
+        width: 100% !important;
+        padding-right: 15% !important;
+        padding-left: 15% !important;
+    }
+
+
+    @include atSmall {
+        width: 100% !important;
+        padding-right: 20% !important;
+        padding-left: 20% !important;
+    }
+
+
+
+}
+
+.paragraph_column2 {
+
+    @include atLarge {
+        padding-right: 5% !important;
+        padding-left: 2% !important;
+    }
+
+
+    @include atMedium {
+        width: 100% !important;
+        padding-right: 5% !important;
+        padding-left: 5% !important;
+    }
+
+    @include atSmall {
+        width: 100% !important;
+        padding-right: 20% !important;
+        padding-left: 20% !important;
+    }
+
+}
+
+
+//colum no size
+.margin-top {
+    margin-top: 25px !important;
+}
+
+//Adjust Padding on img on the smaller screen
+.img_pad_ajust_screen {
+
+    @include atMedium {
+        width: 100% !important;
+    }
+
+    @include atSmall {
+        width: 100% !important;
+        padding-top: 0px !important;
+    }
+
+}
+
+.img_eventos_ajust_screen {
+    @include atLarge {
+        margin-left: 20%;
+        width: 80%;
+    }
+}
+
+//Divider
+.divider {
+
+    height: 1px;
+    width: 80%;
+    background: lightgray;
+    margin: 50px auto;
+}
+
+
+//Outras ATV
+.img_card_outras-atv {
+
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+
+    @include atMedium {
+
+        max-height: 350px !important;
+    }
+
+    @include atSmall {
+
+        max-height: 300px !important;
+    }
+
+}
+
+//Other activities sections
+.col40pc {
+
+
+    @include atMedium {
+        max-width: 40%;
+    }
+
+    @include atSmall {
+        max-width: 100% !important;
+    }
+
+}
+
+.col60pc {
+
+    @include atMedium {
+        max-width: 52%;
+    }
+
+    @include atSmall {
+        max-width: 100% !important;
+    }
+
+
+}
+
+.card-container {
+    display: grid !important;
+    gap: 16px;
+
+    @include atLarge {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include atMedium {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include atSmall {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+
+.direction-column {
+
+    @include atMedium {
+
+        flex-direction: column;
+    }
+}
+
+//Blog Section
+.column20 {
+
+    margin-left: 1rem !important;
+    padding: 1% !important;
+}
+
+.column80 {
+
+    @include atSmall {
+
+        margin-left: 1rem !important;
+        padding: 1% !important;
+    }
+
+    &__img {
+
+        @include atLarge {
+
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        @include atMedium {
+
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        @include atSmall {
+
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+}

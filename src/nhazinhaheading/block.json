@@ -1,0 +1,13 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "portfolios/nhazinhaheader",
+    "title": "Nhazinha 2 Titles",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./style.css",
+    "render": "file:./render.php",
+    "attributes": {
+        "firstTitle" : {"type" : "string", "default": "Default de cima"},
+        "secondTitle" : {"type" : "string","default": "Default de baixo"}
+    }
+}

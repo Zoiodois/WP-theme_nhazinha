@@ -1,0 +1,17 @@
+.img_column-first-page{
+
+    width: 80%;
+    @include atMedium{
+      height: 450px;
+    }
+    @include atSmall{
+        height: 300px;
+      }
+
+
+}
+
+.img_other-activitys-cards{
+
+  height: 360px;
+}
